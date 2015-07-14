@@ -1,0 +1,25 @@
+.table {
+    margin-top: 60px;
+}
+
+.container {
+    margin-top: 3%;
+}
+
+td {
+    text-align: center;
+}
+
+#inputText {
+    width: 60%;
+}
+
+.reL {
+    width: 6% !important;
+    margin-left: 40%;
+    text-align: center;
+}
+
+#buttonRegister {
+    margin-left: 50%;
+}
