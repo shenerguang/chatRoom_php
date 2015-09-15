@@ -11,3 +11,15 @@
 地址  115.159.88.89
 
 欢迎提交BUG！
+
+# v20150915 by seg
+apt-get install apache2
+
+compile php5.3 by hand
+./configure
+make install
+
+apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql
+sudo mysql_install_db
+
+apt-get install php5-gd

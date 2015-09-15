@@ -9,7 +9,7 @@ session_start();
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-$pdo = new PDO('mysql:host=127.0.0.1;dbname=phpMessage', 'root', '123456');
+$pdo = new PDO('mysql:host=127.0.0.1;dbname=phpMessage', 'root', 'root');
 $msgToInput = $_POST["msgA"];
 unset($_POST["msgA"]);
 if(isset($_SESSION["user"]) && $msgToInput!="") {

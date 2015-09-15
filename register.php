@@ -25,8 +25,9 @@ elseif ($code != $_SESSION["code_num"]) {
     header("Location:regist.php");
 }
 else {
-    $pwdhashed = password_hash($pswd, PASSWORD_DEFAULT);
-    $pdo = new PDO('mysql:host=127.0.0.1;dbname=phpMessage', 'root', '123456');
+/*    $pwdhashed = password_hash($pswd, PASSWORD_DEFAULT); */
+    $pwdhashed = $pswd;
+    $pdo = new PDO('mysql:host=127.0.0.1;dbname=phpMessage', 'root', 'root');
     $res = $pdo->query("select max(id) from users");
     $row = $res->fetch(PDO::FETCH_ASSOC);
     $cnt = (int)($row["max(id)"]);

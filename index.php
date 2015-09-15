@@ -24,7 +24,7 @@
                 <table class="table">
                     <?php
                     $tdColor = Array("info","danger","success","warning","active");
-                    $pdo = new PDO('mysql:host=127.0.0.1;dbname=phpMessage', 'root', '123456');
+                    $pdo = new PDO('mysql:host=127.0.0.1;dbname=phpMessage', 'root', 'root');
                     $queryStatement = $pdo->query("select * from users natural join messageM order by time desc");
                     $cnt = 0;
                     while($row = $queryStatement->fetch(PDO::FETCH_ASSOC)) {

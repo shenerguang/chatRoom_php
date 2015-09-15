@@ -8,7 +8,7 @@
 
 error_reporting(E_ALL);ini_set('display_errors', 1);
 
-$pdo = new PDO('mysql:host=127.0.0.1;dbname=phpMessage', 'root', '123456');
+$pdo = new PDO('mysql:host=127.0.0.1;dbname=phpMessage', 'root', 'root');
 $userName = $_POST["user"];
 $pwd = $_POST["pswd"];
 
@@ -22,5 +22,16 @@ if(password_verify($pwd,$row["pwd"])) {
 else {
     $_SESSION["user"] = 2;
 }
+
+function password_verify($p1, $p2)
+{
+	if($p1==$p2)
+	{
+		return 1;
+	}else{
+		return 0;
+	}
+}
+
 
 header("Location:index.php");
