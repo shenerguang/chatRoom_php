@@ -13,6 +13,10 @@
 欢迎提交BUG！
 
 # v20150915 by seg
+Reference Page:
+http://nighting9.farbox.com/post/za-xiang/ji-yu-phphe-bootstrapde-ni-ming-liu-yan-ban
+
+Install Steps:
 apt-get install apache2
 
 compile php5.3 by hand
